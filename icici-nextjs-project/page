@@ -1,0 +1,84 @@
+warning: in the working copy of 'src/app/page.tsx', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/app/page.tsx b/src/app/page.tsx[m
+[1mindex 2561712..8897b5e 100644[m
+[1m--- a/src/app/page.tsx[m
+[1m+++ b/src/app/page.tsx[m
+[36m@@ -1,12 +1,69 @@[m
+[31m-import type { Metadata } from "next";[m
+[31m-import LandingPage from "../components/landing-page";[m
+[31m-[m
+[31m-export const metadata: Metadata = {[m
+[31m-  title: "Banking, made simpler",[m
+[31m-  description:[m
+[31m-    "A simpler way to manage everyday banking, track your spending, and plan ahead.",[m
+[31m-};[m
+[32m+[m[32mimport Image from "next/image";[m
+ [m
+ export default function Home() {[m
+[31m-  return <LandingPage />;[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">[m
+[32m+[m[32m      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">[m
+[32m+[m[32m        <Image[m
+[32m+[m[32m          className="dark:invert h-5 w-[100px]"[m
+[32m+[m[32m          src="/next.svg"[m
+[32m+[m[32m          alt="Next.js logo"[m
+[32m+[m[32m          width={100}[m
+[32m+[m[32m          height={20}[m
+[32m+[m[32m          priority[m
+[32m+[m[32m        />[m
+[32m+[m[32m        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">[m
+[32m+[m[32m          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">[m
+[32m+[m[32m            To get started, edit the{" "}[m
+[32m+[m[32m            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">[m
+[32m+[m[32m              page.tsx[m
+[32m+[m[32m            </code>{" "}[m
+[32m+[m[32m            file.[m
+[32m+[m[32m          </h1>[m
+[32m+[m[32m          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">[m
+[32m+[m[32m            Looking for a starting point or more instructions? Head over to{" "}[m
+[32m+[m[32m            <a[m
+[32m+[m[32m              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"[m
+[32m+[m[32m              className="font-medium text-zinc-950 dark:text-zinc-50"[m
+[32m+[m[32m            >[m
+[32m+[m[32m              Templates[m
+[32m+[m[32m            </a>{" "}[m
+[32m+[m[32m            or the{" "}[m
+[32m+[m[32m            <a[m
+[32m+[m[32m              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"[m
+[32m+[m[32m              className="font-medium text-zinc-950 dark:text-zinc-50"[m
+[32m+[m[32m            >[m
+[32m+[m[32m              Learning Nextjs Day 1- Setup and Creating a New App[m
+[32m+[m[32m            </a>{" "}[m
+[32m+[m[32m            center.[m
+[32m+[m[32m          </p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">[m
+[32m+[m[32m          <a[m
+[32m+[m[32m            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"[m
+[32m+[m[32m            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"[m
+[32m+[m[32m            target="_blank"[m
+[32m+[m[32m            rel="noopener noreferrer"[m
+[32m+[m[32m          >[m
+[32m+[m[32m            <Image[m
+[32m+[m[32m              className="dark:invert h-[14px] w-4"[m
+[32m+[m[32m              src="/vercel.svg"[m
+[32m+[m[32m              alt="Vercel logomark"[m
+[32m+[m[32m              width={16}[m
+[32m+[m[32m              height={14}[m
+[32m+[m[32m            />[m
+[32m+[m[32m            Deploy Now[m
+[32m+[m[32m          </a>[m
+[32m+[m[32m          <a[m
+[32m+[m[32m            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"[m
+[32m+[m[32m            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"[m
+[32m+[m[32m            target="_blank"[m
+[32m+[m[32m            rel="noopener noreferrer"[m
+[32m+[m[32m          >[m
+[32m+[m[32m            Documentation   for enterprice level application[m
+[32m+[m[32m          </a>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </main>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  );[m
+ }[m
